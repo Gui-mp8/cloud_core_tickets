@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'cloud_core_tickets', '--source=.']
+  args: ['functions', 'deploy', 'cloud_core_tickets', '--source=cloud_function']
 
 options:
   logging: CLOUD_LOGGING_ONLY
