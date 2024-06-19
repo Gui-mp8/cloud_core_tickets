@@ -8,7 +8,7 @@ from bigquery import BigQuery
 
 # Load the CSV file into a DataFrame
 # df = pd.read_csv("gs://cloud_core/tickets-June-13-2024-15_22 - tickets-June-13-2024-15_22.csv.csv", sep=",", encoding="utf8")
-def main(requests):
+def main(request):
     BigQuery().truncate_csv_file(
         storage_file_path="gs://cloud_core/tickets-June-13-2024-15_22 - tickets-June-13-2024-15_22.csv.csv",
         dataset_name="cloud_core",
